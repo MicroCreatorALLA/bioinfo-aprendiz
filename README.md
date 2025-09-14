@@ -1,64 +1,62 @@
 # 🧬 Missões de Bioinformática
 
-Este repositório documenta minha **jornada de aprendizado em Bioinformática**, guiada por missões práticas e progressivas — do básico até a maestria.  
-A ideia é aprender fazendo, construindo scripts, analisando dados reais de sequenciamento e entendendo os conceitos de forma aplicada.
+Este repositório documenta minha **jornada prática de aprendizado em Bioinformática**, desde conceitos básicos até análises reais de dados de sequenciamento.  
+A ideia é aprender fazendo, construindo scripts em Python, analisando dados reais de FASTA e FASTQ, e aplicando conhecimentos teóricos em tarefas concretas.
 
 ---
 
-## 🚀 Estrutura do Repositório
-missoes_bioinfo/
-│
-├── Missao_1_GCcounter/
-│ └── gc_counter.py # Script Python para calcular o conteúdo GC de um genoma FASTA
-│
-├── Missao_2_FASTQ/
-│ ├── SRR390728_1.fastq.gz # Dados reais de RNA-Seq (read 1)
-│ ├── SRR390728_2.fastq.gz # Dados reais de RNA-Seq (read 2)
-│ ├── analise_fastq.py # Script simples: conta reads e mostra exemplos de cabeçalhos
-│ └── analise_qualidade.py # Script avançado: análise de qualidade estilo FastQC (qualidade média, composição, gráficos)
-│
-└── README.md # Você está aqui!
-
----
-
-## 🎯 Missões Concluídas
+## 🎯 Objetivos das Missões
 
 ### 📌 Missão 1: GC Counter
-- **Objetivo:** Aprender a manipular arquivos FASTA e contar o conteúdo GC (proporção de guanina+citosina).  
-- **Conceitos aprendidos:**
-  - Estrutura de arquivos **FASTA**.
-  - Manipulação de strings biológicas em Python.
-  - Cálculo de proporções nucleotídicas.
+- **O que fizemos:**  
+  - Ler arquivos FASTA, calcular conteúdo GC (guanina + citosina) do genoma.  
+- **O que aprendi:**  
+  - Estrutura de arquivos FASTA  
+  - Manipulação de strings em Python  
+  - Cálculos de proporção de nucleotídeos  
 
-### 📌 Missão 2: Exploração de FASTQ
-- **Objetivo:** Entender arquivos **FASTQ** e fazer análises básicas de qualidade.  
-- **Ferramentas criadas:**
-  - `analise_fastq.py`: conta número de leituras, tamanho médio, mostra cabeçalhos.  
-  - `analise_qualidade.py`: análise detalhada estilo FastQC (qualidade média por posição, composição de bases, exporta CSV e gráficos).  
-- **Conceitos aprendidos:**
-  - Estrutura de arquivos **FASTQ** (sequência + qualidade Phred).
-  - Como converter caracteres ASCII em scores de qualidade.
-  - Noção de **qualidade de sequenciamento** (Phred scores).
-  - Uso de Python para bioinformática aplicada (manipulação eficiente de grandes arquivos).
-  - Criação de relatórios CSV e visualizações gráficas.
+### 📌 Missão 2: FASTQ & Análise de Qualidade
+- **O que fizemos:**  
+  - Baixar dados reais de sequenciamento RNA-Seq (SRR390728)  
+  - Criar scripts Python para explorar os dados:
+    - `analise_fastq.py` → contagem de reads, tamanho médio, exemplos de cabeçalhos  
+    - `analise_qualidade.py` → qualidade por posição, composição de bases, geração de CSVs e gráficos  
+- **O que aprendi:**  
+  - Estrutura de arquivos FASTQ (sequência + qualidade Phred)  
+  - Conversão de caracteres ASCII em scores de qualidade  
+  - Noções de qualidade de sequenciamento (Phred score)  
+  - Como manipular arquivos grandes eficientemente em Python  
+  - Criação de relatórios e gráficos para interpretação de dados  
 
 ---
 
 ## 🔮 Próximas Missões
 
-- Missão 3: Alinhamento de leituras contra um genoma de referência (BWA + SAMtools).
-- Missão 4: Chamada de variantes (SNPs/INDELs).
-- Missão 5: Análise de expressão gênica (RNA-Seq pipeline).
-- Missão 6: Visualização e integração em Python (matplotlib, pandas, seaborn).
+- **Missão 3:** Alinhamento de leituras com referência (BWA, Bowtie2, SAMtools)  
+- **Missão 4:** Chamada de variantes (SNPs/INDELs)  
+- **Missão 5:** Análise de expressão gênica (RNA-Seq pipeline completo)  
+- **Missão 6:** Visualização e integração em Python (matplotlib, seaborn, pandas)
 
 ---
 
-## 📘 Objetivo Final
+## 📘 Objetivo Final do Projeto
 
-Ao final desta jornada, terei desenvolvido:
-- Um **pipeline completo** de bioinformática.
-- Scripts autorais em Python.
-- Entendimento profundo dos **formatos de dados biológicos** (FASTA, FASTQ, SAM/BAM, VCF).
-- Base sólida para pesquisa acadêmica e atuação profissional na área.
+Ao final deste repositório, terei:
+- Um **pipeline completo de bioinformática** para análise de dados de sequenciamento  
+- Scripts próprios em Python para análise e manipulação de FASTA e FASTQ  
+- Conhecimento profundo dos **formatos de dados biológicos**: FASTA, FASTQ, SAM/BAM, VCF  
+- Habilidades aplicáveis em **pesquisa acadêmica e mercado de bioinformática**
 
 ---
+
+## ⚡ Dicas de Uso
+
+1. **Não subir arquivos FASTQ grandes no GitHub**; mantenha apenas scripts e resumos.  
+2. Scripts Python são independentes — você pode rodar `analise_fastq.py` ou `analise_qualidade.py` em qualquer arquivo FASTQ compactado (`.fastq.gz`).  
+3. Os CSVs e gráficos gerados ajudam a interpretar qualidade e composição das leituras.
+
+---
+
+## ✅ Conclusão
+
+Este repositório não é só código — é uma **documentação viva da minha evolução em bioinformática**. Cada missão ensina conceitos práticos, cria ferramentas úteis e registra o aprendizado passo a passo.
