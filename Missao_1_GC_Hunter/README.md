@@ -1,34 +1,58 @@
-# Missão 1 – GC% Hunter
+# 📂 Missão 1: GC Hunter
 
-Este projeto é parte da minha jornada de aprendizado em Bioinformática.
+Esta pasta contém scripts e arquivos da **Missão 1**, cujo objetivo é explorar arquivos FASTA e calcular o conteúdo GC (guanina + citosina) de sequências genômicas.
 
-## Objetivo
-- Ler um arquivo FASTA de genoma de *Escherichia coli*.
-- Calcular a contagem total de bases (A, T, G, C).
-- Calcular a porcentagem de GC.
+---
 
-## Como usar
-1. Baixe o arquivo FASTA:
-wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Escherichia_coli/reference/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz
-gunzip GCF_000005845.2_ASM584v2_genomic.fna.gz
+## 🗂 Estrutura da pasta
 
-Copiar código
-2. Execute o script Python:
-python3 gc_counter.py
+gc_counter.py # Script Python para calcular conteúdo GC de arquivos FASTA
+GCF_000005845.2_ASM584v2_genomic.fna # Exemplo de genoma em formato FASTA
+README.md # Este arquivo
+---
 
-## Saída esperada
-O script mostrará:
-- Tamanho total do genoma
-- Quantidade e porcentagem de A, T, G, C
-- GC%
+## ⚡ Script e instruções
 
-Exemplo:
-Tamanho total: 4639675 bases
-A: 1223456 (26.35%)
-T: 1234567 (26.58%)
-G: 1098765 (23.69%)
-C: 1078887 (23.37%)
-GC%: 47.06%
+### 1️⃣ gc_counter.py
+**Objetivo:**  
+- Calcular a porcentagem de GC em um genoma ou sequências FASTA individuais  
+- Contar o número total de nucleotídeos  
+- Exibir resultados de forma clara
 
-## Autor
-ALLA – Aprendiz de Bioinformática
+**Como rodar:**
+
+```bash
+python3 gc_counter.py GCF_000005845.2_ASM584v2_genomic.fna
+O que esperar:
+
+Tamanho total da sequência
+
+Número de cada nucleotídeo (A, T, G, C)
+
+Percentual de GC
+
+📊 Exemplos de saída
+Tamanho total da sequência: 4,639,221 bp
+A: 1,085,000
+T: 1,091,000
+G: 1,214,000
+C: 1,249,000
+Conteúdo GC: 53.7%
+
+🔍 Conceitos aprendidos
+
+Estrutura de arquivos FASTA
+
+Manipulação de sequências biológicas em Python
+
+Cálculo de proporção de nucleotídeos
+
+Noções básicas de bioinformática aplicadas a genomas completos
+
+📘 Próximos passos
+
+Missão 2: Exploração de arquivos FASTQ e análise de qualidade (veja ../Missao_2_FASTQ/README.md)
+
+Missão 3: Alinhamento de leituras contra referência
+
+---
